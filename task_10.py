@@ -8,7 +8,8 @@ number_1 = pin // 1000
 number_2 = (pin % 1000) // 100
 number_3 = (pin % 100) // 10
 number_4 = (pin % 10)
-repeat = (number_1 == number_2) + (number_1 == number_3) + (number_1 == number_4) + (number_2 == number_3) + (number_2 == number_4) + (number_3 == number_4)
+repeat = ((number_1 == number_2) + (number_1 == number_3) + (number_1 == number_4) + (number_2 == number_3) +
+          (number_2 == number_4) + (number_3 == number_4))
 
 if numbers == 4 and repeat == 0 and (pin < 1900 or pin > 2050):
     print('OK')
